@@ -1,0 +1,22 @@
+/* Add all Fonts over here */
+
+
+/* ----------------------- */
+
+
+/* Add all variables over here */
+
+
+/* Actual CSS starts from here and its not going to be responsive*/
+
+body {
+    height: 97vh;
+}
+
+.website {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(2.5rem, 3vw, 3.5rem);
+    font-family: 'Courier New', Courier, monospace;
+}
