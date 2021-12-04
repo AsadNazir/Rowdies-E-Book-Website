@@ -12,15 +12,41 @@
     <title>Rodies E-book Store</title>
 </head>
 
-<body>
+<body id="all">
     <!-- This is going to be empty since i am gonna add a modal  -->
     <!-- So we are gonna Add all of our content in this website DIV -->
     <div class="website">
-
-        If you are Seeing this This Website is most probably my new Project and is under construction Hang on for a while
+        <div class="top">
+            <nav>
+                <div class="nav_left">
+                    ROWDIE<br>E-book
+                </div>
+                <div class="nav_right">
+                    <ul>
+                        <li class="menu"><a href="">Home</a></li>
+                        <li class="menu"><a href="">E-books</a></li>
+                        <li class="menu"><a href="">More</a></li>
+                    </ul>
+                </div>
+                <div class="search_bar">
+                    <input type="text" placeholder="Search">
+                </div>
+            </nav>
+        </div>
 
     </div>
 </body>
 <!-- ADD JS Links over here -->
+<script>
+    //Comment and uncomment this when workng 
+    let noob = document.querySelector(`#all`);
+    (function() {
+
+        noob.innerHTML = `<div class="website_2">
+        If you are Seeing this This Website is most probably my new Project and is under construction Hang on for a while
+
+    </div>`;
+    }())
+</script>
 
 </html>
