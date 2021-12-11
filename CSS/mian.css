@@ -9,16 +9,17 @@
 
 :root {
     --font1: clamp(1.7rem, 3vw, 2.5rem);
-    --font2: clamp(1.4rem, 2.5vw, 2rem);
+    --font2: clamp(1.4rem, 2.2vw, 2rem);
     --font3: clamp(1.2rem, 1.4vw, 1.8rem);
-    --color_green: rgb(0, 165, 41);
+    /* --color_green: rgb(0, 165, 41); */
+    --color_green: #00a708;
 }
 
 
 /* Actual CSS starts from here and its not going to be responsive*/
 
 body {
-    height: 97vh;
+    /* height: 97vh; */
     padding: 0;
     margin: 0vw;
     font-family: 'Raleway', sans-serif;
@@ -40,10 +41,11 @@ body {
 /* Top section here */
 
 .top {
-    height: 90vh;
+    height: clamp(500px, 90vh, 900px);
     /* border: 2px solid blue; */
-    background: linear-gradient(to right, rgb(0 0 0 / 59%), rgb(0 0 0 / 61%)), url(/Images/Top-sec-background-img.jpg);
+    background: linear-gradient(to right, rgb(0 0 0 / 70%), rgb(0 0 0 / 71%)), url(/Images/Top-sec-background-img.jpg);
     color: white;
+    width: clamp(300px, 98vvw, 1600px);
     background-position: center;
     background-size: contain;
 }
@@ -53,7 +55,7 @@ body {
 
 nav {
     display: flex;
-    border: 2px solid red;
+    padding: 0 clamp(1rem, 4vw, 5rem);
     justify-content: space-between;
 }
 
@@ -74,13 +76,21 @@ nav ul li {
     margin: 0 clamp(0.5rem, 1vw, 1rem);
 }
 
+.nav_right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50vw;
+    /* border: 2px solid rgb(252, 252, 252); */
+}
+
 .nav_right li ::before {
     content: '';
     position: absolute;
     width: 100%;
-    height: 3px;
+    height: 4px;
     background-color: var(--color_green);
-    bottom: 0;
+    bottom: -6px;
     left: 0;
 }
 
@@ -92,34 +102,149 @@ nav ul li {
 }
 
 
-/* Left side of teh navbar */
+/* Left side of the navbar */
 
 .nav_left {
     /* border: 2px solid blue; */
     font-size: var(--font1);
+    display: flex;
+    align-items: center;
+}
+
+.nav_left i {
+    color: var(--color_green);
+    margin-right: 1rem;
 }
 
 
 /* Input Search Bar over here */
 
 .search_bar {
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-.search_bar input {
-    background: linear-gradient(grey, grey);
+    justify-content: space-between;
+    height: 2.5rem;
+    width: 14vw;
+    padding: 0 2rem;
+    /* background: linear-gradient(grey, grey); */
     outline: none;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     background: rgba(255, 255, 255, 0.219);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
     backdrop-filter: blur( 7.5px);
     -webkit-backdrop-filter: blur( 7.5px);
     border: 1px solid rgba( 255, 255, 255, 0.18);
-    height: 2rem;
-    width: 15vw;
+    color: white;
+    position: relative;
+    font-weight: lighter;
+    font-size: var(--font3);
+    align-content: space-around;
+}
+
+.search_bar input {
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
     color: white;
     font: var(--font3);
+}
+
+
+/* Side Bar for mobiles */
+
+.side_menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.side_menu ul li {
+    margin: 0;
+}
+
+.side_menu {
+    position: absolute;
+    z-index: 10;
+    height: 90vh;
+    right: 0;
+    width: 50vw;
+    background: red;
+    display: none;
+}
+
+
+/* Top main section styling over here */
+
+.top_main_sec {
+    /* border: 2px solid white; */
+    height: calc(100% - 7rem);
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.top_main_left {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top_main_left>h1 {
+    font-size: calc( var(--font1) + 10px);
+    line-height: 5rem;
+}
+
+
+/* Button Click Me */
+
+.btn_click_here {
+    background: var(--color_green);
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Rowdies', cursive;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: var(--font3);
+    letter-spacing: 0.1rem;
+    font-weight: lighter;
+    padding: 0.6rem 0.9rem;
+    border-radius: 30px;
+    display: flex;
+    width: 10rem;
+    align-items: center;
+}
+
+.btn_click_here a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+}
+
+.top_main_btn>h1 {
+    font-size: var(--font2);
+    letter-spacing: 0.1rem;
+    font-weight: lighter;
+}
+
+.top_main_right {
+    display: grid;
+    place-items: center;
+    width: 40%;
+}
+
+.top_main_right img {
+    width: clamp(5rem, 50%, 15rem);
+}
+
+.btn_click_here:hover {
+    background: darkgreen;
 }

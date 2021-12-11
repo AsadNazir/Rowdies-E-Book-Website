@@ -1,0 +1,95 @@
+/* Add all Fonts over here */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Rowdies:wght@300&display=swap');
+
+/* ----------------------- */
+
+
+/* Add all variables over here */
+
+:root {
+    --font1: clamp(1.7rem, 3vw, 2.5rem);
+    --font2: clamp(1.4rem, 2.2vw, 2rem);
+    --font3: clamp(1.2rem, 1.4vw, 1.8rem);
+    /* --color_green: rgb(0, 165, 41); */
+    --color_green: #00a708;
+}
+
+
+/* Actual CSS starts from here and its not going to be responsive*/
+
+body {
+    /* height: 97vh; */
+    padding: 0;
+    margin: 0vw;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Rowdies', cursive;
+}
+
+.website_2 {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(2.5rem, 3vw, 3.5rem);
+}
+
+.website {
+    font-size: var(--font3);
+}
+
+
+/* Outer Card Div over here */
+
+.card_cont {
+    /* height: 50vh; */
+    width: clamp(300px, 70%, 1000px);
+    /* border: 2px solid red; */
+    margin: 4rem auto;
+    display: grid;
+    /* padding: 0 5rem; */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+}
+
+.cards {
+    /* border: 2px solid green; */
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color: var(--color_green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    border-radius: 2rem;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.cards i {
+    font-size: 3.5rem;
+}
+
+.cards>h1 {
+    font-weight: lighter;
+    margin: 0;
+    margin-top: 1rem;
+    font-size: var(--font2);
+}
+
+.cards>p {
+    font-weight: lighter;
+    font-size: var(--font3);
+    text-align: center;
+}
+
+.cards:hover {
+    box-shadow: -1px 13px 18px 2px grey;
+    position: relative;
+    /* bottom: 2px; */
+    cursor: pointer;
+    background-color: rgb(1, 126, 1);
+    transform: scale(1.02);
+}
