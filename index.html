@@ -21,8 +21,22 @@
 <body id="all">
     <!-- This is going to be empty since i am gonna add a modal  -->
     <!-- So we are gonna Add all of our content in this website DIV -->
+    <div class="side_menu">
+        <ul>
+            <i class="fas fa-times" id="Close"></i>
+            <li class="search_bar">
+                <input type="text" placeholder="Search">
+            </li>
+            <li class="menu"><a href="">Home</a></li>
+            <li class="menu"><a href="">E-books</a></li>
+            <li class="menu"><a href="">More</a></li>
+        </ul>
+
+    </div>
     <div class="website">
+        <!-- Top Section Starts from here -->
         <div class="top">
+            <!-- Navihation Menu -->
             <nav>
                 <div class="nav_left">
                     <i class="fas fa-book-open"></i> ROWDIE
@@ -34,24 +48,17 @@
                         <li class="menu"><a href="">E-books</a></li>
                         <li class="menu"><a href="">More</a></li>
                     </ul>
+
                     <div class="search_bar">
                         Search
                         <input type="text">
                         <i class="fas fa-search"></i>
                     </div>
                 </div>
-                <!-- Mobile Devices Sidebar MENU -->
-                <div class="nav_right side_menu">
-                    <ul>
-                        <li class="search_bar">
-                            <input type="text" placeholder="Search">
-                        </li>
-                        <li class="menu"><a href="">Home</a></li>
-                        <li class="menu"><a href="">E-books</a></li>
-                        <li class="menu"><a href="">More</a></li>
-                    </ul>
+                <i class="fas fa-bars" id="Open"></i>
 
-                </div>
+                <!-- Mobile Devices Sidebar MENU -->
+
             </nav>
 
             <!-- Main Section over -->
@@ -80,6 +87,8 @@
                 <!-- Right TOp Sections Ends here -->
             </section>
         </div>
+        <!-- Top Section Ends over here -->
+        <!-- Cards are over here  -->
         <div class="card_cont">
             <a class="cards card1" href="#" target="_blank">
                 <i class="fas fa-download"></i>
@@ -103,9 +112,11 @@
                 </p>
             </a>
         </div>
+        <!-- Cards end over here-->
     </div>
 </body>
 <!-- ADD JS Links over here -->
+<script src="./Index.js"></script>
 <script>
     //Comment and uncomment this when workng 
     // let noob = document.querySelector(`#all`);

@@ -42,7 +42,7 @@ body {
 
 .card_cont {
     /* height: 50vh; */
-    width: clamp(300px, 70%, 1000px);
+    width: clamp(300px, 80%, 1000px);
     /* border: 2px solid red; */
     margin: 4rem auto;
     display: grid;
