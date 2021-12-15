@@ -12,7 +12,7 @@ const ul = document.querySelector(`#side_menu_ul`)
 Menu_open.addEventListener(`click`, function() {
 
     Menu.style.opacity = `1`;
-    Menu.style.transform = `translateX(0%) scaleX(1)`;
+    Menu.style.transform = `scaleX(1)`;
 
     // Website.style.opacity = `0.6`;
     // body.style.height = `100vh`;
@@ -30,7 +30,7 @@ Menu_Close.addEventListener(`click`, Close_func)
 //Close Fucntion
 function Close_func() {
     Menu.style.opacity = `0`
-    Menu.style.transform = `translateX(100%) scaleX(0)`;
+    Menu.style.transform = `scaleX(0)`;
 
 
     // Website.style.opacity = `1`;
