@@ -24,7 +24,6 @@ body {
     margin: 0vw;
     font-family: 'Raleway', sans-serif;
     font-family: 'Rowdies', cursive;
-    overflow-x: hidden;
 }
 
 .website_2 {
@@ -37,7 +36,6 @@ body {
 .website {
     font-size: var(--font3);
     margin: 0;
-    overflow: hidden;
     transition: all 0.2s ease-in-out;
 }
 
@@ -49,7 +47,7 @@ body {
     /* border: 2px solid blue; */
     background: linear-gradient(to right, rgb(0 0 0 / 70%), rgb(0 0 0 / 71%)), url(/Images/Top-sec-background-img.jpg);
     color: white;
-    width: clamp(300px, 98vvw, 1600px);
+    width: clamp(300px, 98vw, 1600px);
     background-position: center;
     background-size: contain;
 }
@@ -128,7 +126,7 @@ nav ul li {
     align-items: center;
     justify-content: space-between;
     height: 2.5rem;
-    width: 14vw;
+    width: 30%;
     padding: 0 2rem;
     /* background: linear-gradient(grey, grey); */
     outline: none;
@@ -164,6 +162,7 @@ nav ul li {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    transition: all 0.2s ease-in-out;
 }
 
 .side_menu ul li {
@@ -176,12 +175,14 @@ nav ul li {
     height: 99vh;
     right: 0;
     top: 0;
+    display: none;
     width: 50vw;
     background: var(--color_green);
     color: white;
-    transform: translateX(100%);
+    transform: translateX(100%) scale(1);
     box-sizing: border-box;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    transform-origin: center;
 }
 
 

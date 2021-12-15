@@ -1,0 +1,64 @@
+/* Add all variables over here */
+
+:root {
+    --font1: clamp(1.7rem, 3.1vw, 2.5rem);
+    --font2: clamp(1.4rem, 2.2vw, 2rem);
+    --font3: clamp(1.2rem, 1.4vw, 1.8rem);
+    /* --color_green: rgb(0, 165, 41); */
+    --color_green: #00a708;
+}
+
+.topReads {
+    /* border: 2px solid black; */
+    margin: 2rem auto;
+    width: clamp(300px, 98vw, 1600px);
+    background-color: rgb(186, 252, 186);
+    /* height: 50vh; */
+}
+
+.topReads>h1 {
+    font-size: var(--font1);
+    text-align: center;
+}
+
+.topReads_cont {
+    display: grid;
+    /* border: 2px solid green; */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    height: 90%;
+    width: 80%;
+    margin: 2rem auto;
+    place-items: center;
+}
+
+.book {
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.book img {
+    transition: all 0.3s ease-in-out;
+    transform: scale(0.9);
+    width: 60%;
+    height: 80%;
+}
+
+.book img:hover {
+    transform: scale(1);
+    box-shadow: 1px 13px 20px 0px #585555e0;
+}
+
+.book::before {
+    content: "01";
+    position: absolute;
+    font-size: var(--font1);
+    text-decoration: underline;
+    color: var(--color_green);
+    top: -1rem;
+}

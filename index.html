@@ -15,25 +15,30 @@
     <link rel="stylesheet" href="/CSS/mian.css">
     <!-- Cards CSS Link Over here -->
     <link rel="stylesheet" href="/CSS/Card.css">
+    <!-- Books CSS -->
+    <link rel="stylesheet" href="/CSS/Books.css">
     <title>Rodies E-book Store</title>
 </head>
 
 <body id="all">
     <!-- This is going to be empty since i am gonna add a modal  -->
     <!-- So we are gonna Add all of our content in this website DIV -->
-    <div class="side_menu">
-        <ul>
-            <i class="fas fa-times" id="Close"></i>
-            <li class="search_bar">
-                <input type="text" placeholder="Search">
-            </li>
-            <li class="menu"><a href="">Home</a></li>
-            <li class="menu"><a href="">E-books</a></li>
-            <li class="menu"><a href="">More</a></li>
-        </ul>
 
-    </div>
     <div class="website">
+        <!-- Mobile Devices Sidebar MENU -->
+        <div class="side_menu">
+            <ul id="side_menu_ul">
+                <i class="fas fa-times" id="Close"></i>
+                <li class="search_bar">
+                    <input type="text" placeholder="Search">
+                </li>
+                <li class="menu"><a href="">Home</a></li>
+                <li class="menu"><a href="">E-books</a></li>
+                <li class="menu"><a href="">More</a></li>
+            </ul>
+
+        </div>
+        <!-- Ends here -->
         <!-- Top Section Starts from here -->
         <div class="top">
             <!-- Navihation Menu -->
@@ -57,7 +62,6 @@
                 </div>
                 <i class="fas fa-bars" id="Open"></i>
 
-                <!-- Mobile Devices Sidebar MENU -->
 
             </nav>
 
@@ -113,6 +117,21 @@
             </a>
         </div>
         <!-- Cards end over here-->
+        <!-- Middle section Or Top Reads section Over here -->
+        <div class="topReads">
+            <h1>Top Reads</h1>
+            <div class="topReads_cont">
+                <div class="book"><img src="./Images/Da vinci.jpg" alt=""></div>
+                <div class="book"><img src="./Images/kite.jpg" alt=""></div>
+                <div class="book"><img src="./Images/pride.jpg" alt=""></div>
+            </div>
+            <div class="btn_click_here">
+                <a href=""><span>Read More</span>
+                    <i class="fas fa-chevron-circle-down"></i>
+                </a>
+
+            </div>
+        </div>
     </div>
 </body>
 <!-- ADD JS Links over here -->

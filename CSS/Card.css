@@ -16,28 +16,6 @@
 }
 
 
-/* Actual CSS starts from here and its not going to be responsive*/
-
-body {
-    /* height: 97vh; */
-    padding: 0;
-    margin: 0vw;
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Rowdies', cursive;
-}
-
-.website_2 {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    font-size: clamp(2.5rem, 3vw, 3.5rem);
-}
-
-.website {
-    font-size: var(--font3);
-}
-
-
 /* Outer Card Div over here */
 
 .card_cont {
