@@ -11,9 +11,9 @@
 .topReads {
     /* border: 2px solid black; */
     margin: 2rem auto;
-    width: clamp(300px, 98vw, 1600px);
+    width: 100%;
     background-color: rgb(186, 252, 186);
-    /* height: 50vh; */
+    padding: 1rem 0;
 }
 
 .topReads>h1 {
@@ -33,25 +33,50 @@
 }
 
 .book {
-    width: 100%;
-    height: 100%;
+    width: 60%;
+    transform: scale(0.9);
+    height: 80%;
     /* border: 2px solid red; */
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
     position: relative;
+    transition: all 0.3s ease-in-out;
 }
 
 .book img {
     transition: all 0.3s ease-in-out;
-    transform: scale(0.9);
-    width: 60%;
-    height: 80%;
+    width: 100%;
+    position: relative;
+    height: 100%;
 }
 
-.book img:hover {
+.book:hover {
     transform: scale(1);
     box-shadow: 1px 13px 20px 0px #585555e0;
+}
+
+.book::after {
+    content: "This is some random content.";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.692));
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+.book:hover::after {
+    z-index: 1;
 }
 
 .book::before {
@@ -60,5 +85,8 @@
     font-size: var(--font1);
     text-decoration: underline;
     color: var(--color_green);
-    top: -1rem;
+    top: -4rem;
 }
+
+
+/* Exp */

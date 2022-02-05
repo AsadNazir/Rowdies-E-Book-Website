@@ -16,7 +16,7 @@ Menu_open.addEventListener(`click`, function() {
 
     // Website.style.opacity = `0.6`;
     // body.style.height = `100vh`;
-    // body.style.overflow = `hidden`;
+    body.style.overflow = `hidden`;
 
 
     console.log("here");
@@ -31,6 +31,7 @@ Menu_Close.addEventListener(`click`, Close_func)
 function Close_func() {
     Menu.style.opacity = `0`
     Menu.style.transform = `scaleX(0)`;
+    body.style.overflow = `visible`;
 
 
     // Website.style.opacity = `1`;
