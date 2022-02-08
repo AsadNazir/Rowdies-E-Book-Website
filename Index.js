@@ -13,8 +13,8 @@ Menu_open.addEventListener(`click`, function() {
 
     Menu.style.opacity = `1`;
     Menu.style.transform = `scaleX(1)`;
+    Website.style.opacity = `0.4`;
 
-    // Website.style.opacity = `0.6`;
     // body.style.height = `100vh`;
     body.style.overflow = `hidden`;
 
@@ -32,9 +32,9 @@ function Close_func() {
     Menu.style.opacity = `0`
     Menu.style.transform = `scaleX(0)`;
     body.style.overflow = `visible`;
+    Website.style.opacity = `1`;
 
 
-    // Website.style.opacity = `1`;
     // body.style.height = `inherit`;
     //body.style.overflow = `visible`;
 

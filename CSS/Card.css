@@ -8,7 +8,7 @@
 /* Add all variables over here */
 
 :root {
-    --font1: clamp(1.7rem, 3vw, 2.5rem);
+    --font1: clamp(1.52rem, 3vw, 2.5rem);
     --font2: clamp(1.4rem, 2.2vw, 2rem);
     --font3: clamp(1.2rem, 1.4vw, 1.8rem);
     /* --color_green: rgb(0, 165, 41); */
@@ -42,7 +42,7 @@
     padding: 2rem 1rem;
     box-sizing: border-box;
     border-radius: 2rem;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
     text-decoration: none;
 }
 
