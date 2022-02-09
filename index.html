@@ -226,18 +226,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
 <!-- GSAP here  -->
 <script src="./Index.js"></script>
+
+
+
 <script>
-    //Comment and uncomment this when workng 
-    // let noob = document.querySelector(`#all`);
-    // (function() {
-
-    //     noob.innerHTML = `<div class="website_2">
-    //     If you are Seeing this This Website is most probably my new Project and is under construction Hang on for a while
-
-    // </div>`;
-    // }())
-
-    let top_tl = gsap.timeline();
+    //let tl = gsap.timeline();
     gsap.registerPlugin(ScrollTrigger);
 
     // This is Top left GSAP
@@ -282,12 +275,35 @@
         },
         //y: 50,
         opacity: 0,
-        scale: 0.7,
-        stagger: 0.5,
-        //stagger: 1,
-        duration: 1,
-        ease: "back"
+        scale: 0.2,
+        //delay: 0.3,
+        stagger: 0.35,
+        // duration: 1,
+        // ease: "b"
 
+    })
+
+    // Top Reads
+
+    gsap.from(".book", {
+        scrollTrigger: {
+            trigger: ".topReads",
+            start: "top 50%"
+        },
+        // delay: 0.5,
+        opacity: 0,
+        scale: 0.4,
+        stagger: 0.3
+    })
+
+    gsap.from(".footer_Poster", {
+        scrollTrigger: {
+            trigger: ".footer_Poster",
+            start: "top 80%"
+        },
+        opacity: 0,
+        // y: 100,
+        duration: 1
     })
 </script>
 
